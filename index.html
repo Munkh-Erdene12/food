@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="" class="logo">
+              <i class="fa-solid fa-utensils"></i>Forkify</a
+            >
+          </div>
+          <div class="navigation">
+            <ul>
+              <li><a href="#home" class="active link-item">Home</a></li>
+              <li><a href="#about" class="link-item">About</a></li>
+              <li><a href="#menu" class="link-item">Menu</a></li>
+              <li><a href="#order" class="link-item">Review</a></li>
+              <li><a href="#contact" class="link-item">Contact</a></li>
+            </ul>
+          </div>
+          <div class="icon">
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <i class="fa-regular fa-magnifying-glass"></i>
+            <a class="likeNum">
+              <p class="num">0</p>
+              <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="#" class="shopNum">
+              <p class="nums">0</p>
+              <i class="fa-regular fa-cart-shopping"></i>
+            </a>
+            <a href="./src/html/login.html">
+              <i class="fa-solid fa-user-large"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="shopList">
+        <div class="left"></div>
+        <div class="right">
+          <h3 class="title">
+            Таны сагсалсан хоолны тоо: <span class="number">0</span>
+          </h3>
+          <div class="shopLinstContainer"></div>
+          <h3 class="title" style="margin-top: 20px">
+            Нийт үнэ <span class="shopSum">0</span>
+          </h3>
+
+          <!-- <div class="list">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
+            <div class="listTitle">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class=""></h3>
+            </div>
+            <div class="cart">
+              <div class="iconDelte">
+                <i class="fa-solid fa-trash-can"></i>
+              </div>
+              <span>Төлбөр төлөх</span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <section class="slides" id="home">
+      <div class="opcity">
+        <div class="img-slider">
+          <div class="slide active">
+            <img
+              src="https://images.unsplash.com/photo-1624726175512-19b9baf9fbd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1628294895950-9805252327bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+              alt=""
+            />
+          </div>
+          <div class="nvg">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+          </div>
+          <div class="arrowBtn">
+            <div id="prev">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div id="next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h3 class="sub-heading">about us</h3>
+        <h1 class="heding">why choose us</h1>
+        <div class="row">
+          <div class="image">
+            <img
+              src="src/image/Quick-2-Minute-Gyoza-Sauce-Recipe-Easy-Japanese-Sauce-Reci-27202-f7cd4ceb0e-1627142069.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>best food in the country</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </p>
+            <div class="icons-container">
+              <div class="icons">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>free delivery</span>
+              </div>
+              <div class="icons">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <span>easy payments</span>
+              </div>
+              <div class="icons">
+                <i class="fa-solid fa-headset"></i>>
+                <span>24/7 service</span>
+              </div>
+            </div>
+            <a href="#" class="btns">learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h3 class="sub-heading">our dishes</h3>
+        <h3 class="heding">popular dishes</h3>
+        <div class="box-container">
+          <!-- <div class="box" data-name="p1">
+            <div class="fa fa-heart hrt"></div>
+
+            <a href="#" class="fa fa-eye"></a>
+            <img src="./image/1234.jpeg" alt="" />
+            <h3>burger</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="cart">
+              <span>$5.99</span>
+              <a href="#" class="btns addCart" id="">add to cart</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./src/javascript/index.js"></script>
+  </body>
+</html>
+<img src="" alt="" />

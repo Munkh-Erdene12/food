@@ -1,0 +1,23 @@
+.sticky {
+  box-shadow: 2px 3px 75px -24px rgba(0, 0, 0, 0.62);
+}
+.active {
+  color: #fff !important;
+  background: var(--green) !important;
+}
+.open {
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 2 !important;
+}
+.img-slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+.img-slider .nvg .btn.active {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.shopMenu {
+  display: block !important;
+}
