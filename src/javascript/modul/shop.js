@@ -11,6 +11,7 @@ let menuList = "";
 let result = 0;
 let shopSum = 0;
 let num = 0;
+console.log(foodBase);
 export let shopMenu = () => {
   shopMenuIcon.addEventListener("click", (e) => {
     e.preventDefault();
@@ -46,8 +47,9 @@ export let shopMenu = () => {
       shopNum.innerHTML = result += 1;
       const targetId = e.currentTarget.getAttribute("data-target");
       const item = foodBase.find((baseElement) => baseElement.id === targetId);
-      shopSum += item.foodPrice;
+      shopSum += item.price;
       shopSums.innerHTML = shopSum;
+
       num += item.num;
       numberShop.innerHTML = num;
       shopListItem = `
@@ -81,7 +83,7 @@ export let shopMenu = () => {
           e.preventDefault();
           let id = e.currentTarget.getAttribute("data-name");
           let dlet = foodBase.find((baseElement) => baseElement.id === id);
-          shopSum -= dlet.foodPrice;
+          shopSum -= dlet.price;
           shopSums.innerHTML = shopSum;
           num -= dlet.num;
           numberShop.innerHTML = num;

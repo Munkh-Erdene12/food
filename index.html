@@ -28,8 +28,7 @@
               <li><a href="#home" class="active link-item">Home</a></li>
               <li><a href="#about" class="link-item">About</a></li>
               <li><a href="#menu" class="link-item">Menu</a></li>
-              <li><a href="#order" class="link-item">Review</a></li>
-              <li><a href="#contact" class="link-item">Contact</a></li>
+              <li><a href="#order" class="link-item">Order</a></li>
             </ul>
           </div>
           <div class="icon">
@@ -59,7 +58,7 @@
           </h3>
           <div class="shopLinstContainer"></div>
           <h3 class="title" style="margin-top: 20px">
-            Нийт үнэ <span class="shopSum">0</span>
+            Нийт үнэ <span class="shopSum"></span>
           </h3>
 
           <!-- <div class="list">
@@ -203,6 +202,77 @@
         </div>
       </div>
     </section>
+    <section class="order" id="order">
+      <h3 class="sub-heading">Order now</h3>
+      <h3 class="heding">free and fast</h3>
+      <div class="container">
+        <form action="" id="formOrder">
+          <div class="inputBox">
+            <div class="input">
+              <span>your name</span>
+              <input type="text" placeholder="enter your name" id="name" />
+            </div>
+            <div class="input">
+              <span>your number</span>
+              <input
+                type="number"
+                placeholder="enter your number"
+                id="number"
+              />
+            </div>
+            <div class="input">
+              <span>your order</span>
+              <input type="number" placeholder="enter food number" id="order" />
+            </div>
+            <div class="input">
+              <span>additional food</span>
+              <input type="test" placeholder="extra with food" id="food" />
+            </div>
+            <div class="input">
+              <span>how musch</span>
+              <input
+                type="number"
+                placeholder="how many order"
+                id="nemeltFood"
+              />
+            </div>
+            <div class="input">
+              <span>date and time</span>
+              <input type="datetime-local" id="date" />
+            </div>
+            <div class="input">
+              <span>Your address</span>
+              <textarea
+                name=""
+                id=""
+                placeholder="enter your address"
+                cols="30"
+                rows="10"
+                id="address"
+              ></textarea>
+            </div>
+            <div class="input">
+              <span>Your message</span>
+              <textarea
+                name=""
+                id=""
+                placeholder="enter your message"
+                cols="30"
+                rows="10"
+                id="message"
+              ></textarea>
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="order now"
+            class="btns"
+            id="submitOrder"
+          />
+        </form>
+      </div>
+    </section>
+    <footer></footer>
 
     <script type="module" src="./src/javascript/index.js"></script>
   </body>

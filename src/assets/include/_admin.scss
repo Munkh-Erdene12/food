@@ -1,6 +1,6 @@
 .boxview {
   width: 800px;
-  height: 800px;
+  height: 950px;
   // z-index: 9999;
   background: var(--white);
   box-shadow: var(--box-shadow);
@@ -19,7 +19,7 @@
   }
   .close {
     position: absolute;
-    top: 0;
+    top: 80px;
     z-index: 99;
     color: var(--black);
     cursor: pointer;

@@ -4,6 +4,18 @@ const password = document.getElementById("password");
 const ConfrimPassword = document.getElementById("confirmPassword");
 const text = document.querySelectorAll(".text");
 const resigter = document.querySelector(".register");
+const check = document.getElementById("check");
+const inputImg = document.getElementById("img");
+check.addEventListener("click", (e) => {
+  if ((password.type === "password", ConfrimPassword.type === "password")) {
+    password.type = "text";
+    ConfrimPassword.type = "text";
+  } else {
+    password.type = "password";
+    ConfrimPassword.type = "password";
+  }
+});
+
 resigter.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -12,6 +24,7 @@ resigter.addEventListener("click", (e) => {
     name: inputName.value,
     email: inputEmail.value,
     password: password.value,
+    img: null,
   };
   const regex1 = /[a-z]/;
   const regexP2 = /[A-Z]/;
@@ -34,10 +47,17 @@ resigter.addEventListener("click", (e) => {
     //  shine hereglegj nemne
     storedUserList ? (userList = JSON.parse(storedUserList)) : false;
 
-    userList.push(user);
-
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+      user.img = reader.result;
+      userList.push(user);
+      localStorage.setItem("userList", JSON.stringify(userList));
+    });
+    console.log(reader);
+    if (img.files[0]) {
+      reader.readAsDataURL(img.files[0]);
+    }
     // array luu nemj hadaglana
-    localStorage.setItem("userList", JSON.stringify(userList));
     inputName.value = "";
     inputEmail.value = "";
     password.value = "";

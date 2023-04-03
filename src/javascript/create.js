@@ -3,19 +3,20 @@ const id = document.getElementById("foodId");
 const price = document.getElementById("foodPrice");
 const title = document.getElementById("foodTitle");
 const img = document.getElementById("foodImg");
-let baseData = [];
-let storedData = localStorage.getItem("FoodBase");
+console.log(id);
+let baseData = JSON.parse(localStorage.getItem("FoodBase")) || [];
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
-  // объект үүсгэнэ
   const newItem = {
     id: id.value,
-    price: price.value,
+    price: parseInt(price.value),
     title: title.value,
-    img: "",
+    num: 1,
+    img: null,
   };
-  // зургыг хадгалах
+  let item = baseData.find((id) => id.id);
+
   const reader = new FileReader();
   reader.addEventListener("load", () => {
     newItem.img = reader.result;
@@ -29,4 +30,5 @@ submit.addEventListener("click", (e) => {
   price.value = "";
   title.value = "";
   img.value = "";
+  alert("Amjiltai post oruulla");
 });

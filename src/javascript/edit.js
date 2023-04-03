@@ -73,7 +73,7 @@ edit.forEach((el) => {
           <input type="submit" data-update='${item.id}' class="adminIn sub submit" />
         </div>
          <div class="deleteAdmin">
-          <input type="submit" data-delete='${item.id}' class="adminIn sub delete" />
+          <input type="submit" data-delete='${item.id}' class="adminIn sub delete" value='delete' />
         </div>
     `;
     boxview.innerHTML = boxViews;

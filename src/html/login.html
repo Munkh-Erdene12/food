@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <title>Document</title>
+    <title>Sign in</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="login">
@@ -15,6 +22,7 @@
           method="post"
           class="loginDefualt"
           enctype="multipart/form-data"
+          id="form"
         >
           <h3>Sign in now</h3>
           <input
@@ -23,18 +31,19 @@
             placeholder="enter email"
             class="box emails"
             id="email"
-            value=""
             required
           />
-          <input
-            type="password"
-            name="password"
-            value=""
-            placeholder="enter password"
-            class="box passwords"
-            id="password"
-            required
-          />
+          <div class="password">
+            <input
+              type="password"
+              name="password"
+              placeholder="enter password"
+              class="box passwords"
+              id="password"
+              required
+            />
+            <i class="fa-regular fa-eye" id="eye"></i>
+          </div>
 
           <input
             type="submit"
@@ -48,6 +57,13 @@
             <a href="./create.html" id="">register now</a>
           </p>
         </form>
+        <div class="container-form">
+          <div class="forms-container">
+            
+            </form>
+          </div>
+        </div>
+       
       </div>
     </div>
     <script src="../javascript/modul/login.js"></script>

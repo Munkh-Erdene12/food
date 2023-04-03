@@ -1,0 +1,39 @@
+.order {
+  form {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 1.5rem;
+    .inputBox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .input {
+        width: 49%;
+        span {
+          display: block;
+          padding: 0.5rem 0;
+          font-size: 1.5rem;
+          color: var(--light-color);
+        }
+        input,
+        textarea {
+          background: #eee;
+          border-radius: 0.5rem;
+          padding: 1rem;
+          font-size: 1.6rem;
+          color: var(--black);
+          text-transform: none;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+        textarea {
+          height: 20rem;
+          resize: none;
+        }
+      }
+    }
+  }
+}
