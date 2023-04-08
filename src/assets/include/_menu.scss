@@ -30,6 +30,11 @@
           color: #fff;
           background: var(--green);
         }
+        &.hrtToggle {
+          color: #fff;
+          background: var(--green);
+          right: 0rem;
+        }
       }
       &:hover .fa-heart {
         right: 1.5rem;

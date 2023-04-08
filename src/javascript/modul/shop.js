@@ -6,12 +6,11 @@ const shopLinstContainer = document.querySelector(".shopLinstContainer");
 const shopNum = document.querySelector(".nums");
 const shopSums = document.querySelector(".shopSum");
 const numberShop = document.querySelector(".number");
-let shopListItem = "";
-let menuList = "";
+const hrtNum = document.querySelector(".num");
 let result = 0;
 let shopSum = 0;
 let num = 0;
-console.log(foodBase);
+
 export let shopMenu = () => {
   shopMenuIcon.addEventListener("click", (e) => {
     e.preventDefault();
@@ -19,7 +18,7 @@ export let shopMenu = () => {
   });
 
   foodBase.forEach((baseElement) => {
-    menuList = `
+    let menuList = `
         <div class="box" data-name="">
             <div class="fa fa-heart hrt"></div>
             <img src="${baseElement.img}" alt="" />
@@ -52,7 +51,7 @@ export let shopMenu = () => {
 
       num += item.num;
       numberShop.innerHTML = num;
-      shopListItem = `
+      let shopListItem = `
        <div class="list">
             <div class="img">
               <img src="${item.img}" alt="" />
@@ -96,4 +95,16 @@ export let shopMenu = () => {
     });
   });
   const hrt = document.querySelectorAll(".hrt");
+  let hrtCon = 0;
+  hrt.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      el.classList.toggle("hrtToggle");
+      if (el.classList.contains("hrtToggle")) {
+        hrtNum.innerHTML = hrtCon += 1;
+      } else {
+        hrtNum.innerHTML = hrtCon -= 1;
+      }
+    });
+  });
 };

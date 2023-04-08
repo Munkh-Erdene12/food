@@ -29,6 +29,7 @@
               <li><a href="#about" class="link-item">About</a></li>
               <li><a href="#menu" class="link-item">Menu</a></li>
               <li><a href="#order" class="link-item">Order</a></li>
+              <li><a href="#footer" class="link-item">footer</a></li>
             </ul>
           </div>
           <div class="icon">
@@ -209,56 +210,45 @@
         <form action="" id="formOrder">
           <div class="inputBox">
             <div class="input">
-              <span>your name</span>
-              <input type="text" placeholder="enter your name" id="name" />
+              <span>Нэр</span>
+              <input type="text" placeholder="Таны нэр" id="name" />
             </div>
             <div class="input">
-              <span>your number</span>
+              <span>Дугаар</span>
+              <input type="number" placeholder="Дугаар" id="number" />
+            </div>
+            <div class="input">
+              <span>Захиалах хоолны нэр</span>
               <input
-                type="number"
-                placeholder="enter your number"
-                id="number"
+                type="text"
+                placeholder="Захиалах хоолны нэр"
+                id="orders"
               />
             </div>
             <div class="input">
-              <span>your order</span>
-              <input type="number" placeholder="enter food number" id="order" />
+              <span>Нэмэлт захиалах зүйл</span>
+              <input type="test" placeholder="Нэмэлт захиалах зүйл" id="food" />
             </div>
             <div class="input">
-              <span>additional food</span>
-              <input type="test" placeholder="extra with food" id="food" />
+              <span>Хэдэн хүний</span>
+              <input type="number" placeholder="Хэдэн хүний" id="nemeltFood" />
             </div>
             <div class="input">
-              <span>how musch</span>
-              <input
-                type="number"
-                placeholder="how many order"
-                id="nemeltFood"
-              />
-            </div>
-            <div class="input">
-              <span>date and time</span>
+              <span>Он, сар, өдөр</span>
               <input type="datetime-local" id="date" />
             </div>
             <div class="input">
-              <span>Your address</span>
+              <span>Байршил</span>
               <textarea
                 name=""
-                id=""
-                placeholder="enter your address"
-                cols="30"
-                rows="10"
+                placeholder="Байршилаа оруулах"
                 id="address"
               ></textarea>
             </div>
             <div class="input">
-              <span>Your message</span>
+              <span>нэмэлт утга</span>
               <textarea
-                name=""
-                id=""
                 placeholder="enter your message"
-                cols="30"
-                rows="10"
                 id="message"
               ></textarea>
             </div>
@@ -272,8 +262,47 @@
         </form>
       </div>
     </section>
-    <footer></footer>
-
+    <footer id="footer">
+      <div class="container">
+        <div class="box-container">
+          <div class="footerBox">
+            <h3>Locations</h3>
+            <a href="">Ulaanbaar Shangirla</a>
+            <a href="">Ulaanbaatar 120</a>
+            <a href="">Ulaanbaatar 19</a>
+            <a href="">Ulaanbaatar Town</a>
+            <a href="">Ulaanbaatar Chingeltei</a>
+          </div>
+          <div class="footerBox">
+            <h3>Quick links</h3>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Menu</a>
+            <a href="">Order</a>
+            <a href="">Busad</a>
+          </div>
+          <div class="footerBox">
+            <h3>Contact Info</h3>
+            <a href="">+123-456-890</a>
+            <a href="">+111-222-333</a>
+            <a href="">+123-456-890</a>
+            <a href="">Forkify@gmail.com</a>
+            <a href="">Ulaanbaatar</a>
+          </div>
+          <div class="footerBox">
+            <h3>Follow us</h3>
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+            <a href="">Youtube</a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">copyright 2022 by <span>web designer</span></div>
+    </footer>
+    <div class="loader-container">
+      <img src="./src/image/Food Loader - GIF Animation.gif" alt="" />
+    </div>
     <script type="module" src="./src/javascript/index.js"></script>
   </body>
 </html>
